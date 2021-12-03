@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<title>Часы</title>
+	<meta http-equiv = "Content-Type" content = "text/html; charset = utf-8" >
+	<link rel = "stylesheet" type = "text/css" href = "style.css">
+	<script src = "clockscript.js"></script>
+  </head>	
+  <body>    
+	<div id='clock'>Тут будет текущее время</div> <br>
+    <canvas height='480' width='480' id='myCanvas'></canvas> <br>
+    <table>  
+        <tr>
+            <th>Год</th>
+            <th>Месяц</th>
+            <th>День</th>
+            <th>Часы</th>
+            <th>Минуты</th>
+            <th>Секунды</th>
+        </tr>      
+        <tr> 
+      <!--<div class="number">
+            <button class="number-minus" type="button" onclick="this.nextElementSibling.stepDown(); this.nextElementSibling.onchange();">-</button>
+            <input id='months' type="number" min="1" max="999" value="100">
+            <button class="number-plus" type="button" onclick="this.previousElementSibling.stepUp(); this.previousElementSibling.onchange();">+</button>
+          </div>
+          <div class="number">
+            <button class="number-minus" type="button" onclick="this.nextElementSibling.stepDown(); this.nextElementSibling.onchange();">-</button>
+            <input id='days' type="number" min="1" max="999" value="12">
+            <button class="number-plus" type="button" onclick="this.previousElementSibling.stepUp(); this.previousElementSibling.onchange();">+</button>
+          </div>
+          <div class="number">
+            <button class="number-minus" type="button" onclick="this.nextElementSibling.stepDown(); this.nextElementSibling.onchange();">-</button>
+            <input id='hours' type="number" min="1" max="999" value="7">
+            <button class="number-plus" type="button" onclick="this.previousElementSibling.stepUp(); this.previousElementSibling.onchange();">+</button>
+          </div>
+          <div class="number">
+            <button class="number-minus" type="button" onclick="this.nextElementSibling.stepDown(); this.nextElementSibling.onchange();">-</button>
+            <input id='hours' type="number" min="1" max="999" value="24">
+            <button class="number-plus" type="button" onclick="this.previousElementSibling.stepUp(); this.previousElementSibling.onchange();">+</button>
+          </div>
+          <div class="number">
+            <button class="number-minus" type="button" onclick="this.nextElementSibling.stepDown(); this.nextElementSibling.onchange();">-</button>
+            <input id='minutes' type="number" min="1" max="999" value="60">
+            <button class="number-plus" type="button" onclick="this.previousElementSibling.stepUp(); this.previousElementSibling.onchange();">+</button>
+          </div>
+          <div class="number">
+            <button class="number-minus" type="button" onclick="this.nextElementSibling.stepDown(); this.nextElementSibling.onchange();">-</button>
+            <input id='seconds' type="number" min="1" max="999" value="60">
+            <button class="number-plus" type="button" onclick="this.previousElementSibling.stepUp(); this.previousElementSibling.onchange();">+</button>
+          </div>-->
+          <td><input id='years' type="number" min="1" max="999" step="1" value="100"></td>
+          <td><input id='months' type="number" min="1" max="999" step="1" value="12"></td>
+          <td><input id='days' type="number" min="1" max="999" step="1" value="7"></td>
+          <td><input id='hours' type="number" min="1" max="999" step="1" value="24"></td>
+          <td><input id='minutes' type="number" min="1" max="999" step="1" value="60"></td>
+          <td><input id='seconds' type="number" min="1" max="999" step="1" value="60"></td>
+        </tr>
+    </table>    
+    <div id="result"></div>
+    <div class="footer">Created by HMR</div>
+  </body>
+</html>
